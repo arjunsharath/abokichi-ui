@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Product</title>
+  <link rel="stylesheet" href="./css/product.css" />
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="top-bar">
+  <div>USD ▾ &nbsp; 📍 Stores</div>
+  <div>Login / Register</div>
+</div>
+
+<!-- HEADER -->
+<header class="main-header">
+  <div class="logo">ABOKICHI</div>
+
+  <nav>
+    <a href="listing.html">Shop</a>
+    <a href="#">Our story</a>
+    <a href="#">Recipes</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <div class="header-icons">
+    <img src="./assets/images/icons/search.svg" alt="Search">
+    <img src="./assets/images/icons/heart.svg" alt="Wishlist">
+
+    <div class="cart-icon">
+      <img src="./assets/images/icons/cart.svg" alt="Cart">
+      <span id="cart-count">0</span>
+    </div>
+  </div>
+</header>
+
+<!-- BREADCRUMB -->
+<div class="breadcrumb">
+  <a href="listing.html">Shop</a>
+  <span>›</span>
+  <span class="current" id="breadcrumbName"></span>
+</div>
+
+<!-- PRODUCT -->
+<section class="product-section">
+
+  <!-- CAROUSEL -->
+  <div class="image-carousel">
+    <button class="carousel-btn left" onclick="prevImg()">‹</button>
+
+    <img id="carousel-img" alt="Product Image" />
+
+    <button class="carousel-btn right" onclick="nextImg()">›</button>
+  </div>
+
+  <!-- INFO -->
+  <div class="product-info">
+    <h1 id="productName"></h1>
+
+    <div class="price" id="productPrice"></div>
+
+    <div class="rating" id="productRating"></div>
+
+    <p class="description">Coming Soon</p>
+
+    <div class="actions">
+      <button class="add-cart" onclick="addToCart()">ADD TO CART</button>
+      <button class="buy-now" onclick="buyNow()">Buy Now</button>
+    </div>
+
+    <div class="wishlist">♡ WISHLIST</div>
+  </div>
+</section>
+
+<!-- TABS -->
+<section class="tabs">
+  <div class="tab-buttons">
+    <button class="active" onclick="openTab('desc', this)">DESCRIPTION</button>
+    <button onclick="openTab('reviews', this)">REVIEWS</button>
+    <button onclick="openTab('videos', this)">VIDEOS</button>
+    <button onclick="openTab('comments', this)">COMMENTS</button>
+  </div>
+
+  <div id="desc" class="tab-content active">Coming Soon</div>
+  <div id="reviews" class="tab-content">Reviews coming soon.</div>
+  <div id="videos" class="tab-content">Videos coming soon.</div>
+  <div id="comments" class="tab-content">Comments coming soon.</div>
+</section>
+
+<script src="./js/product.js"></script>
+</body>
+</html>

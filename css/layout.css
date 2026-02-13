@@ -1,0 +1,88 @@
+/* =========================
+   TOP BAR
+========================= */
+
+.top-bar {
+  background: #000;
+  color: #fff;
+  font-size: 14px;
+  padding: 6px 40px;           /* LOCKED */
+  display: flex;
+  align-items: center;         /* vertical lock */
+  justify-content: space-between;
+}
+
+.top-left {
+  display: flex;
+  align-items: center;
+  gap: 24px;                   /* LOCKED */
+}
+
+.store {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  line-height: 1;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+  display: flex;
+  align-items: center;         /* vertical lock */
+  justify-content: space-between;
+  padding: 22px 40px;          /* LOCKED header height */
+  border-bottom: 1px solid #eee;
+}
+
+/* LOGO */
+.logo {
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 1;              /* prevents height creep */
+}
+
+/* NAVIGATION */
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 32px;                   /* LOCKED */
+}
+
+.nav a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  line-height: 1;              /* baseline alignment */
+}
+
+/* ICONS */
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 18px;                   /* LOCKED */
+}
+
+.icons img {
+  width: 20px;
+  height: 20px;
+  display: block;              /* removes inline spacing issues */
+  cursor: pointer;
+}
+
+/* =========================
+   BENEFITS BAR
+========================= */
+
+.benefits {
+  background: #0C3322;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 16px;
+  font-size: 14px;
+  font-weight: 500;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Products</title>
+
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/listing.css" />
+</head>
+<body>
+
+  <!-- PRODUCTS HERO -->
+  <section class="products-hero">
+    <h1>PRODUCTS</h1>
+  </section>
+
+  <div class="listing-container">
+
+    <!-- TOOLBAR -->
+    <div class="products-toolbar">
+      <div class="toolbar-left">
+        <span>Products (<span id="productCount">0</span>)</span>
+
+        <button id="filterBtn" class="filter-btn">
+          <img src="assets/images/icons/filter.png" alt="Filter">
+          <span>Filter</span>
+        </button>
+      </div>
+
+      <div class="toolbar-right">
+        <label>Sorty By:</label>
+        <select id="sortSelect" class="sort-select">
+          <option value="az">Alphabetically, A–Z</option>
+          <option value="za">Alphabetically, Z–A</option>
+          <option value="price-low">Price: Low to High</option>
+          <option value="price-high">Price: High to Low</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- FILTER PANEL -->
+    <div id="filtersPanel" class="filters-panel hidden">
+
+      <div class="filter-group">
+        <h3>Categories</h3>
+        <label><input type="checkbox" value="chili" class="category-filter"> Chili oil, Okazu</label>
+        <label><input type="checkbox" value="soup" class="category-filter"> Miso Soup</label>
+        <label><input type="checkbox" value="matcha" class="category-filter"> Instant Matcha</label>
+      </div>
+
+      <div class="filter-group">
+        <h3>Type</h3>
+        <label><input type="checkbox" value="single" class="type-filter"> Single Pack</label>
+        <label><input type="checkbox" value="multi" class="type-filter"> Multi Set</label>
+      </div>
+
+      <div class="filter-group">
+        <h3>Rating</h3>
+        <label><input type="checkbox" value="5" class="rating-filter">
+          <span class="stars">★★★★★</span>
+        </label>
+        <label><input type="checkbox" value="4" class="rating-filter">
+          <span class="stars">★★★★☆</span> & Up
+        </label>
+        <label><input type="checkbox" value="3" class="rating-filter">
+          <span class="stars">★★★☆☆</span> & Up
+        </label>
+      </div>
+
+    </div>
+
+    <!-- PRODUCT GRID -->
+    <div id="productGrid" class="product-grid"></div>
+
+  </div>
+
+  <script src="js/listing.js"></script>
+</body>
+</html>
